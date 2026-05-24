@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Lian Cataytay, Development Economist & Impact Evaluation Researcher specializing in socio-economic policy, econometrics, and AI-assisted research workflows." />
+  <meta property="og:title" content="Lian Cataytay | Development Economist & Impact Evaluation Researcher" />
+  <meta property="og:description" content="Policy-relevant research, impact evaluation, econometrics, and evidence synthesis for institutions that need defensible analysis." />
+  <title>Lian Cataytay Portfolio</title>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=zodiak@400,700&display=swap" rel="stylesheet">
+  <style>
+    :root, [data-theme="light"] {
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+      --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
+      --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem; --space-5: 1.25rem; --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem; --space-16: 4rem; --space-20: 5rem; --space-24: 6rem;
+      --color-bg: #f7f6f2; --color-surface: #fbfbf9; --color-surface-2: #f3f0ec; --color-border: #d4d1ca; --color-text: #28251d; --color-text-muted: #6f6c65; --color-text-faint: #9b988f; --color-primary: #7d2323; --color-primary-hover: #611919; --color-primary-highlight: #efe0de; --color-divider: #dcd9d5; --color-text-inverse: #f9f8f4;
+      --radius-sm: 0.375rem; --radius-md: 0.75rem; --radius-lg: 1rem; --radius-xl: 1.5rem; --radius-full: 9999px;
+      --shadow-sm: 0 1px 2px rgba(40,37,29,.06); --shadow-md: 0 12px 30px rgba(40,37,29,.08);
+      --font-body: 'Satoshi', Inter, sans-serif; --font-display: 'Zodiak', Georgia, serif;
+      --content-wide: 1180px;
+    }
+    [data-theme="dark"] {
+      --color-bg: #171614; --color-surface: #1d1c1a; --color-surface-2: #262421; --color-border: #393836; --color-text: #e4e0d7; --color-text-muted: #b0aca3; --color-text-faint: #7e7a73; --color-primary: #c96f6f; --color-primary-hover: #dd8a8a; --color-primary-highlight: #3a2424; --color-divider: #2d2b28; --color-text-inverse: #171614; --shadow-sm: 0 1px 2px rgba(0,0,0,.25); --shadow-md: 0 12px 30px rgba(0,0,0,.35);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--font-body);font-size:var(--text-base);line-height:1.6;background:var(--color-bg);color:var(--color-text)}
+    img{display:block;max-width:100%;height:auto}
+    a{text-decoration:none;color:inherit}
+    button{font:inherit;border:none;cursor:pointer}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .container{width:min(calc(100% - 2rem), var(--content-wide));margin-inline:auto}
+    .section{padding:clamp(var(--space-12),7vw,var(--space-24)) 0}
+    .header{position:sticky;top:0;z-index:50;background:rgba(247,246,242,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--color-divider)}
+    [data-theme="dark"] .header{background:rgba(23,22,20,.92)}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;gap:var(--space-4);padding:var(--space-4) 0}
+    .brand{display:flex;align-items:center;gap:var(--space-3);font-size:var(--text-sm);font-weight:700;letter-spacing:.02em}
+    .logo{width:38px;height:38px;color:var(--color-primary)}
+    .nav{display:flex;gap:var(--space-4);flex-wrap:wrap}
+    .nav a{font-size:var(--text-sm);color:var(--color-text-muted)}
+    .nav a:hover,.nav a:focus-visible{color:var(--color-text)}
+    .header-actions{display:flex;align-items:center;gap:var(--space-3)}
+    .theme-toggle,.icon-link{width:44px;height:44px;border-radius:var(--radius-full);display:grid;place-items:center;border:1px solid var(--color-border);background:var(--color-surface)}
+    .hero{padding:clamp(var(--space-16),10vw,var(--space-24)) 0 var(--space-16)}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:var(--space-12);align-items:end}
+    .eyebrow{font-size:var(--text-sm);text-transform:uppercase;letter-spacing:.12em;color:var(--color-primary);margin-bottom:var(--space-4);font-weight:700}
+    h1{font-family:var(--font-display);font-size:var(--text-2xl);line-height:1.02;max-width:14ch}
+    .hero-sub{margin-top:var(--space-5);font-size:var(--text-lg);color:var(--color-text-muted);max-width:52ch}
+    .hero-actions{display:flex;gap:var(--space-4);margin-top:var(--space-8);flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 var(--space-6);border-radius:var(--radius-full);font-size:var(--text-sm);font-weight:700}
+    .btn-primary{background:var(--color-primary);color:var(--color-text-inverse)}
+    .btn-primary:hover{background:var(--color-primary-hover)}
+    .btn-secondary{border:1px solid var(--color-border);background:var(--color-surface)}
+    .hero-note{margin-top:var(--space-10);padding:var(--space-6);background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-xl);box-shadow:var(--shadow-sm)}
+    .hero-note strong{display:block;font-size:var(--text-lg);margin-bottom:var(--space-2)}
+    .hero-card{background:linear-gradient(180deg,var(--color-surface),var(--color-surface-2));border:1px solid var(--color-border);border-radius:var(--radius-xl);padding:var(--space-8);box-shadow:var(--shadow-md)}
+    .hero-card h2{font-family:var(--font-display);font-size:var(--text-xl);margin-bottom:var(--space-4)}
+    .hero-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-4);margin-top:var(--space-6)}
+    .stat{padding:var(--space-4);background:var(--color-bg);border-radius:var(--radius-lg);border:1px solid var(--color-border)}
+    .stat strong{font-size:var(--text-lg);display:block}
+    .section-head{display:flex;justify-content:space-between;gap:var(--space-6);align-items:end;margin-bottom:var(--space-8);flex-wrap:wrap}
+    .section-head h2{font-family:var(--font-display);font-size:var(--text-xl)}
+    .section-head p{max-width:60ch;color:var(--color-text-muted)}
+    .ticker-wrap{overflow:hidden;border-block:1px solid var(--color-divider);padding-block:var(--space-4)}
+    .ticker{display:flex;gap:var(--space-5);width:max-content;animation:scroll 42s linear infinite}
+    .ticker:hover{animation-play-state:paused}
+    .mini-card{min-width:260px;background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-xl);overflow:hidden;box-shadow:var(--shadow-sm)}
+    .mini-card img{width:100%;aspect-ratio:16/10;object-fit:cover}
+    .mini-card-body{padding:var(--space-4)}
+    .mini-card h3{font-size:var(--text-base);margin-bottom:var(--space-2)}
+    .mini-card p{font-size:var(--text-sm);color:var(--color-text-muted)}
+    .feature-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:var(--space-8);align-items:stretch}
+    .feature-image{border-radius:var(--radius-xl);overflow:hidden;min-height:100%}
+    .feature-image img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+    .feature-copy{padding:var(--space-8);border:1px solid var(--color-border);border-radius:var(--radius-xl);background:var(--color-surface)}
+    .feature-copy h3{font-family:var(--font-display);font-size:var(--text-xl);margin-bottom:var(--space-3)}
+    .feature-copy .kicker{font-size:var(--text-sm);color:var(--color-primary);text-transform:uppercase;letter-spacing:.1em;font-weight:700;margin-bottom:var(--space-3)}
+    .feature-copy .sub{font-size:var(--text-lg);color:var(--color-text-muted);margin-bottom:var(--space-4)}
+    .feature-copy .para{color:var(--color-text-muted);margin-bottom:var(--space-6)}
+    .tri-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-5)}
+    .tile{display:block;background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-xl);overflow:hidden;box-shadow:var(--shadow-sm)}
+    .tile img{width:100%;aspect-ratio:4/3;object-fit:cover}
+    .tile-body{padding:var(--space-4)}
+    .tile h3{font-size:var(--text-base);margin-bottom:var(--space-2)}
+    .tile p{font-size:var(--text-sm);color:var(--color-text-muted)}
+    .quad-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--space-4)}
+    .simple-card{padding:var(--space-5);border-radius:var(--radius-xl);background:var(--color-surface);border:1px solid var(--color-border)}
+    .simple-card h3{font-size:var(--text-base);margin-bottom:var(--space-2)}
+    .simple-card p{font-size:var(--text-sm);color:var(--color-text-muted)}
+    .pics{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:var(--space-3)}
+    .pics img{aspect-ratio:1/1;object-fit:cover;border-radius:var(--radius-lg)}
+    .question-box{padding:var(--space-10);border-radius:var(--radius-xl);background:var(--color-primary-highlight);border:1px solid var(--color-border);text-align:center}
+    .question-box h2{font-family:var(--font-display);font-size:var(--text-xl);margin-bottom:var(--space-3)}
+    .question-box p{margin-inline:auto;color:var(--color-text-muted)}
+    .footer{padding:var(--space-8) 0;border-top:1px solid var(--color-divider)}
+    .footer-row{display:flex;justify-content:space-between;gap:var(--space-4);align-items:center;flex-wrap:wrap}
+    .socials{display:flex;gap:var(--space-3);flex-wrap:wrap}
+    .socials a{width:44px;height:44px;border-radius:var(--radius-full);display:grid;place-items:center;border:1px solid var(--color-border);background:var(--color-surface)}
+    .muted{color:var(--color-text-muted);font-size:var(--text-sm)}
+    @keyframes scroll { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+    @media (max-width: 1024px){
+      .hero-grid,.feature-grid,.quad-grid,.tri-grid{grid-template-columns:1fr 1fr}
+      .pics{grid-template-columns:repeat(3,minmax(0,1fr))}
+    }
+    @media (max-width: 720px){
+      .nav{display:none}
+      .hero-grid,.feature-grid,.tri-grid,.quad-grid{grid-template-columns:1fr}
+      .pics{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .hero-card,.feature-copy,.question-box{padding:var(--space-6)}
+    }
+  </style>
+</head>
+<body>
+  <a class="sr-only" href="#main">Skip to content</a>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Homepage">
+        <svg class="logo" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"></circle>
+          <path d="M15 29c6-1 10-6 12-14 1 7 4 12 11 14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M18 18h12" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"></path>
+        </svg>
+        <span>Lian Cataytay</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#work">Case Studies</a>
+        <a href="#insights">Insights</a>
+        <a href="#library">Resources</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Hi, you're looking at a specialist portfolio</p>
+          <h1>Development economics, impact evaluation, and policy-ready research.</h1>
+          <p class="hero-sub">I help institutions turn socio-economic data, evidence, and research workflows into defensible analysis for policy, programs, and high-stakes decision-making.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#work">Start</a>
+            <a class="btn btn-secondary" href="#contact">View Contact</a>
+          </div>
+          <div class="hero-note">
+            <strong>Greeting line</strong>
+            This portfolio is built for research centers, universities, NGOs, hospitals, and government-linked projects that need rigorous analysis explained clearly.
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Main page summary">
+          <h2>Main page text</h2>
+          <p>Main page subtext: A curated body of work in econometrics, impact evaluation, evidence synthesis, academic writing support, and AI-assisted research systems designed for serious institutional clients.</p>
+          <div class="hero-stats">
+            <div class="stat"><strong>Applied Econometrics</strong><span class="muted">DiD, SCM, ARDL, regression, robustness checks</span></div>
+            <div class="stat"><strong>Evidence Work</strong><span class="muted">Meta-analysis, reviews, synthesis, structured briefs</span></div>
+            <div class="stat"><strong>Policy Translation</strong><span class="muted">From technical output to decision-ready summaries</span></div>
+            <div class="stat"><strong>AI Workflows</strong><span class="muted">Faster research cycles with careful verification</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Selected case studies</h2>
+            <p>A rolling view of ten portfolio directions and flagship studies suitable for LinkedIn Featured, GitHub, and a future institutional-facing website.</p>
+          </div>
+        </div>
+      </div>
+      <div class="ticker-wrap">
+        <div class="ticker" aria-label="Rolling horizontal projects">
+          <a class="mini-card" href="#feature"><img src="https://picsum.photos/seed/impacteval/600/380" alt="Impact evaluation study cover" width="600" height="380" loading="lazy"><div class="mini-card-body"><h3>Impact Evaluation of Regional Program</h3><p>Difference-in-differences case study on policy effectiveness.</p></div></a>
+          <a class="mini-card" href="#feature"><img src="https://picsum.photos/seed/meta-analysis/600/380" alt="Meta-analysis visual" width="600" height="380" loading="lazy"><div class="mini-card-body"><h3>Meta-analysis in Geriatric Nutrition</h3><p>Evidence synthesis on multidisciplinary interventions.</p></div></a>
+          <a class="mini-card" href="#feature"><img src="https://picsum.photos/seed/ardl/600/380" alt="Time series research notebook" width="600" height="380" loading="lazy"><div class="mini-card-body"><h3>Migration and Macroeconomic Dynamics</h3><p>ARDL modeling for long- and short-run relationships.</p></div></a>
+          <a class="mini-card" href="#feature"><img src="https://picsum.photos/seed/scm/600/380" alt="Synthetic control chart" width="600" height="380" loading="lazy"><div class="mini-card-body"><h3>Synthetic Control on Agrarian Reform</h3><p>Counterfactual policy evaluation using public-data reconstruction.</p></div></a>
+          <a class="mini-card" href="#feature"><img src="https://picsum.photos/seed/ai-employment/600/380" alt="Employment trends dashboard" width="600" height="380" loading="lazy"><div class="mini-card-body"><h3>Philippine Employment in the AI Era</h3><p>Descriptive labor-market trend analysis with policy framing.</p></div></a>
+          <a class="mini-card" href="#feature"><img src="https://picsum.photos/seed/media-insight/600/380" alt="Media monitoring report" width="600" height="380" loading="lazy"><div class="mini-card-body"><h3>Socio-Political Media Insight Report</h3><p>Structured synthesis for fast-turnaround research reporting.</p></div></a>
+          <a class="mini-card" href="#feature"><img src="https://picsum.photos/seed/ai-workflow/600/380" alt="AI research workflow concept" width="600" height="380" loading="lazy"><div class="mini-card-body"><h3>AI-Assisted Research SOP</h3><p>From question to evidence memo with verifiable checkpoints.</p></div></a>
+          <a class="mini-card" href="#feature"><img src="https://picsum.photos/seed/data-pipeline/600/380" alt="Data processing workflow" width="600" height="380" loading="lazy"><div class="mini-card-body"><h3>Reproducible Analysis Pipeline</h3><p>Cleaned data, documented code, export-ready outputs.</p></div></a>
+          <a class="mini-card" href="#feature"><img src="https://picsum.photos/seed/policy-brief/600/380" alt="Policy brief cover layout" width="600" height="380" loading="lazy"><div class="mini-card-body"><h3>Policy Brief Writing Support</h3><p>Technical findings translated for decision-makers.</p></div></a>
+          <a class="mini-card" href="#feature"><img src="https://picsum.photos/seed/research-design/600/380" alt="Research design planning board" width="600" height="380" loading="lazy"><div class="mini-card-body"><h3>Research Design and Evidence Framing</h3><p>Scoping questions, methods, outputs, and stakeholder use.</p></div></a>
+          <a class="mini-card" href="#feature"><img src="https://picsum.photos/seed/impacteval/600/380" alt="Impact evaluation study cover repeated" width="600" height="380" loading="lazy"><div class="mini-card-body"><h3>Impact Evaluation of Regional Program</h3><p>Difference-in-differences case study on policy effectiveness.</p></div></a>
+          <a class="mini-card" href="#feature"><img src="https://picsum.photos/seed/meta-analysis/600/380" alt="Meta-analysis visual repeated" width="600" height="380" loading="lazy"><div class="mini-card-body"><h3>Meta-analysis in Geriatric Nutrition</h3><p>Evidence synthesis on multidisciplinary interventions.</p></div></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="feature">
+      <div class="container feature-grid">
+        <a class="feature-image" href="https://github.com" target="_blank" rel="noopener noreferrer">
+          <img src="https://picsum.photos/seed/featured-study/1200/900" alt="Featured case study visual" width="1200" height="900" loading="lazy">
+        </a>
+        <div class="feature-copy">
+          <p class="kicker">Featured project</p>
+          <h3>Philippine Employment in the AI Era</h3>
+          <p class="sub">A labor-market trend analysis built from public data and framed for policy interpretation.</p>
+          <p class="para">This flagship public-data case study examines employment, unemployment, labor force participation, and underemployment trends in the Philippines, then situates those patterns in the period of mainstream AI adoption. It is presented carefully as descriptive analysis rather than overstated causal proof, which is exactly the kind of methodological discipline serious institutions value.</p>
+          <a class="btn btn-primary" href="https://github.com" target="_blank" rel="noopener noreferrer">Continue Reading</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="insights">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Research lanes</h2>
+            <p>Three directions that communicate depth: impact evaluation, evidence synthesis, and research systems that speed up work without lowering standards.</p>
+          </div>
+        </div>
+        <div class="tri-grid">
+          <a class="tile" href="#"><img src="https://picsum.photos/seed/impact/900/700" alt="Impact evaluation lane" width="900" height="700" loading="lazy"><div class="tile-body"><h3>Impact evaluation</h3><p>Policy and program assessment using quasi-experimental methods and clear assumptions.</p></div></a>
+          <a class="tile" href="#"><img src="https://picsum.photos/seed/evidence/900/700" alt="Evidence synthesis lane" width="900" height="700" loading="lazy"><div class="tile-body"><h3>Evidence synthesis</h3><p>Structured reviews, meta-analysis, and short briefs that decision-makers can use.</p></div></a>
+          <a class="tile" href="#"><img src="https://picsum.photos/seed/workflows/900/700" alt="AI-assisted workflow lane" width="900" height="700" loading="lazy"><div class="tile-body"><h3>AI-assisted workflows</h3><p>Research SOPs that accelerate literature mapping, drafting, and quality control.</p></div></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="library">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Public presence and assets</h2>
+            <p>A portfolio should show where ideas live, what files can be shared, and how the work looks in public-facing formats.</p>
+          </div>
+        </div>
+        <div class="quad-grid" style="margin-bottom:2rem;">
+          <div class="simple-card"><h3>Social</h3><p>LinkedIn profile, GitHub repository trail, brief professional updates, and public-facing research summaries.</p></div>
+          <div class="simple-card"><h3>Social</h3><p>Research commentary, evidence threads, and concise explanations of policy-relevant methods.</p></div>
+          <div class="simple-card"><h3>Social</h3><p>External mentions, collaborations, and institution-facing credibility signals.</p></div>
+          <div class="simple-card"><h3>Social</h3><p>Contact channels that make collaboration easy without looking like generic freelance outreach.</p></div>
+        </div>
+        <div class="quad-grid" style="margin-bottom:2rem;">
+          <div class="simple-card"><h3>Files</h3><p>Policy briefs, research memos, slide decks, and executive summaries.</p></div>
+          <div class="simple-card"><h3>Files</h3><p>Code repositories with raw, cleaned, script, and output folders.</p></div>
+          <div class="simple-card"><h3>Files</h3><p>Sanitized client work and public-data replicas of confidential analyses.</p></div>
+          <div class="simple-card"><h3>Files</h3><p>Templates for case studies, structured evidence tables, and reproducible workflows.</p></div>
+        </div>
+        <div class="pics" aria-label="Picture gallery">
+          <img src="https://picsum.photos/seed/pic1/500/500" alt="Research workspace detail" width="500" height="500" loading="lazy">
+          <img src="https://picsum.photos/seed/pic2/500/500" alt="Notebook and printed charts" width="500" height="500" loading="lazy">
+          <img src="https://picsum.photos/seed/pic3/500/500" alt="Presentation slide visual" width="500" height="500" loading="lazy">
+          <img src="https://picsum.photos/seed/pic4/500/500" alt="Data table and keyboard" width="500" height="500" loading="lazy">
+          <img src="https://picsum.photos/seed/pic5/500/500" alt="Policy document and annotations" width="500" height="500" loading="lazy">
+          <img src="https://picsum.photos/seed/pic6/500/500" alt="Dashboard screenshot style image" width="500" height="500" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="question-box">
+          <h2>What problem are you trying to solve with evidence?</h2>
+          <p>Whether you need a policy-ready evaluation, a defensible research brief, or a cleaner path from raw information to usable findings, this portfolio is built to start that conversation.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <p class="muted">© All rights reserved. Design adapted for demo images and portfolio presentation.</p>
+      <div class="socials" aria-label="Social links">
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2H21.5l-7.12 8.14L22.75 22h-6.56l-5.13-6.7L5.2 22H1.94l7.62-8.72L1.5 2h6.72l4.64 6.13L18.244 2z"/></svg>
+        </a>
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 8H16V4.5h-2.5C10.46 4.5 9 6.34 9 9.15V12H6.5v3.5H9V22h3.5v-6.5H15L15.5 12h-3V9.5c0-.78.25-1.5 1-1.5z"/></svg>
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg>
+        </a>
+        <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.74 2 4 5.42 4 9.15c0 2.25.85 4.25 2.67 5 .3.13.57.01.65-.32.06-.22.2-.78.26-1.01.08-.32.05-.43-.18-.71-.5-.59-.81-1.36-.81-2.45 0-3.16 2.37-6 6.17-6 3.36 0 5.21 2.06 5.21 4.82 0 3.63-1.61 6.7-4 6.7-1.32 0-2.31-1.09-1.99-2.44.38-1.61 1.11-3.35 1.11-4.51 0-1.04-.56-1.91-1.72-1.91-1.36 0-2.46 1.4-2.46 3.28 0 1.2.41 2.01.41 2.01l-1.66 7.02c-.49 2.08-.08 4.63-.04 4.89.02.15.21.18.29.07.12-.16 1.63-2.02 2.14-3.89.14-.53.81-3.24.81-3.24.4.77 1.56 1.45 2.79 1.45 3.67 0 6.16-3.35 6.16-7.84C20 5.16 16.93 2 12.04 2z"/></svg>
+        </a>
+        <a href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Website">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20"></path><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 8.5H3.56V20h3.38V8.5zM5.25 3A1.97 1.97 0 0 0 3.25 5c0 1.1.9 2 2 2a2 2 0 1 0 0-4zM20.75 13.01c0-3.08-1.64-4.51-3.83-4.51-1.76 0-2.55.97-2.99 1.64V8.5H10.56c.04 1.09 0 11.5 0 11.5h3.37v-6.42c0-.34.03-.68.13-.92.27-.68.88-1.38 1.9-1.38 1.34 0 1.88 1.03 1.88 2.54V20h3.37v-6.99z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const t=document.querySelector('[data-theme-toggle]');
+      const r=document.documentElement;
+      let d=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
+      r.setAttribute('data-theme',d);
+      const icon=(mode)=>mode==='dark'
+        ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg>'
+        : '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';
+      t.innerHTML=icon(d);
+      t.addEventListener('click',()=>{d=d==='dark'?'light':'dark';r.setAttribute('data-theme',d);t.innerHTML=icon(d);});
+    })();
+  </script>
+</body>
+</html>
